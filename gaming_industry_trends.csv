@@ -1,4 +1,4 @@
-Game Title,Genre,Platform,Release Year,Developer,Revenue (Millions $),Players (Millions),Peak Concurrent Players,Metacritic Score,Esports Popularity,Trending Status
+game_title,genre,platform,release_year,developer,revenue_millions_usd,players_millions,peak_concurrent_players,metacritic_score,esports_popularity,trending_status
 Neon Speed 5,Strategy,Xbox,2011,Capcom,52.28,77.99,21.44,69,No,Stable
 Cyber Quest 5,Shooter,Mobile,2018,Bandai Namco,4345.97,65.28,11.22,72,No,Stable
 Fantasy Rivals 1,Strategy,Xbox,2018,Microsoft,1278.29,160.09,48.4,51,Yes,Declining
