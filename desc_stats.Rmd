@@ -1,0 +1,73 @@
+---
+title: "Descriptive Statistics"
+output: html_document
+date: "2025-03-13"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+trends <- read.csv("gaming_industry_trends.csv")
+```
+
+## Available Platforms
+
+```{r}
+distinct(trends, platform)
+```
+## Total Revenue
+
+``` {r}
+summary(trends %>% select(revenue_millions_usd))
+```
+``` {r}
+#histogram(trends %>% select(revenue_millions_usd))
+```
+
+## Revenue by Platform
+
+### Xbox
+
+``` {r}
+summary(trends %>% filter(platform == "Xbox") %>% select(revenue_millions_usd))
+```
+
+### Mobile
+
+``` {r}
+summary(trends %>% filter(platform == "Mobile") %>% select(revenue_millions_usd))
+```
+
+### PC
+
+``` {r}
+summary(trends %>% filter(platform == "PC") %>% select(revenue_millions_usd))
+```
+
+### Cross-Platform
+
+``` {r}
+summary(trends %>% filter(platform == "Cross-Platform") %>% select(revenue_millions_usd))
+```
+
+### Nintendo Switch
+
+``` {r}
+summary(trends %>% filter(platform == "Nintendo Switch") %>% select(revenue_millions_usd))
+```
+
+### Playstation
+
+``` {r}
+summary(trends %>% filter(platform == "PlayStation") %>% select(revenue_millions_usd))
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
