@@ -19,6 +19,7 @@ distinct(trends, platform)
 
 ``` {r}
 summary(trends %>% select(revenue_millions_usd))
+var(trends$revenue_millions_usd)
 ```
 ``` {r}
 #histogram(trends %>% select(revenue_millions_usd))
@@ -30,36 +31,42 @@ summary(trends %>% select(revenue_millions_usd))
 
 ``` {r}
 summary(trends %>% filter(platform == "Xbox") %>% select(revenue_millions_usd))
+var(trends %>% filter(platform == "Xbox") %>% select(revenue_millions_usd))
 ```
 
 ### Mobile
 
 ``` {r}
 summary(trends %>% filter(platform == "Mobile") %>% select(revenue_millions_usd))
+var(trends %>% filter(platform == "Mobile") %>% select(revenue_millions_usd))
 ```
 
 ### PC
 
 ``` {r}
 summary(trends %>% filter(platform == "PC") %>% select(revenue_millions_usd))
+var(trends %>% filter(platform == "PC") %>% select(revenue_millions_usd))
 ```
 
 ### Cross-Platform
 
 ``` {r}
 summary(trends %>% filter(platform == "Cross-Platform") %>% select(revenue_millions_usd))
+var(trends %>% filter(platform == "Cross-Platform") %>% select(revenue_millions_usd))
 ```
 
 ### Nintendo Switch
 
 ``` {r}
 summary(trends %>% filter(platform == "Nintendo Switch") %>% select(revenue_millions_usd))
+var(trends %>% filter(platform == "Nintendo Switch") %>% select(revenue_millions_usd))
 ```
 
 ### Playstation
 
 ``` {r}
 summary(trends %>% filter(platform == "PlayStation") %>% select(revenue_millions_usd))
+var(trends %>% filter(platform == "PlayStation") %>% select(revenue_millions_usd))
 ```
 
 ## Including Plots
